@@ -187,3 +187,7 @@ Case
         when Test_Results =  'Abnormal' then 'Needs more attention and more tests'
         end as  'Status', Hospital, Doctor
 from healthcare_data;
+
+--9.3 Rank Hospitals by Revenue
+select Hospital,sum(Billing_Amount) as Total_revenue,rank() over(order by sum(Billing_Amount)desc) as 'Rank'
+from healthcare_data group by Hospital;
