@@ -103,6 +103,7 @@ The project is organized into the following sections:
 
 * Running total of yearly revenue using Window Functions
 * Patient health status categorization using CASE statements
+* Rank Hospitals by Revenue
 
 ---
 
@@ -116,7 +117,7 @@ The project is organized into the following sections:
 * Aggregate Functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`)
 * CASE Statements
 * Date Functions (`YEAR`, `FORMAT`)
-* Window Functions (`SUM() OVER()`)
+* Window Functions (`SUM() OVER()`,`RANK()`)
 * Subqueries
 * Aliases
 
